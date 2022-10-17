@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Log in design test</title>
+    <script defer src="login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-menu">
+        <img src="./image/logo.svg" alt="logo" class="logo" />
+        <header>
+          <h1 class="title">Designs</h1>
+          <p class="site-descrition">Super stranica di možeš realizirat sve!</p>
+        </header>
+        <!--buttons-login-page-start-->
+        <button class="sign-in-btn">sign in</button>
+        <button class="create-account-btn">create account</button>
+      </div>
+      <!--create-acc-menu-start-->
+      <div class="create-acc-menu">
+        <div class="background-nav">
+          <div class="k-left"></div>
+          <div class="k-right"></div>
+        </div>
+        <img src="./image/icon-close.svg" class="close-btn-ca" />
+        <form class="information-section">
+          <h2 class="create-acc">Create Account</h2>
+          <input
+            type="email"
+            name="email"
+            id="acc-email-create-acc"
+            placeholder="EMAIL"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password-create-acc"
+            placeholder="PASSWORD"
+            required
+          />
+          <input
+            type="password"
+            name="password-repeat"
+            id="password-repeat"
+            placeholder="REPEAT PASSWORD"
+            required
+          />
+          <button class="sign-up-btn" type="submit">
+            <a class="home-page-link" href="./home page.html">sign up</a>
+          </button>
+        </form>
+      </div>
+      <!--sign-in-menu-start-->
+      <div class="sign-in-menu sign-in-show">
+        <div class="background-nav-sign-in">
+          <div class="k-left-sign-in"></div>
+          <div class="k-right-sign-in"></div>
+        </div>
+        <img src="./image/icon-close.svg" class="close-btn-si" />
+        <form class="information-section-sign-in">
+          <h2 class="sign-in-title">sign in</h2>
+          <input
+            type="email"
+            name="email"
+            id="acc-email-sign-in"
+            placeholder="EMAIL"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password-sign-in"
+            placeholder="PASSWORD"
+            required
+          />
+          <button class="sign-in-next-btn" type="submit">
+            <a class="home-page-link" href="./home page.html">sign in</a>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page - Design Library</title>
+    <link rel="stylesheet" href="home page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <a href="./home page.html" class="logo"
+        >Logo
+        <img src="./image/logo.svg" alt="logo" />
+      </a>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">All designs</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./index.html">Sign out</a></li>
+      </ul>
+    </nav>
+    <section>
+      <img
+        src="./image/background-plant.png"
+        id="list-bg"
+        alt="listje pozadina"
+      />
+      <h2 id="text">Designs</h2>
+      <a href="#sec" id="btn" class="btn">Explore</a>
+      <img src="./image/branch.png" id="list-front" alt="zelena grana" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Designs</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quidem
+        similique sint ut quibusdam nobis repudiandae, aperiam enim minima,
+        harum nesciunt accusamus doloremque error nostrum qui excepturi deleniti
+        reprehenderit recusandae?Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Expedita, deserunt excepturi! Dolor a dolorem cum
+        tempore consequatur nostrum dolore totam eos commodi reiciendis nihil
+        rem, soluta maiores! Eaque, molestias modi? Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Eum animi a suscipit optio pariatur,
+        ducimus non nostrum corrupti aliquid minus mollitia molestias
+        repellendus quis quia voluptatibus architecto explicabo accusamus
+        repellat!<br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        molestiae dolor est debitis esse omnis rem blanditiis, illum itaque
+        facere sapiente quod quisquam iste, numquam, reprehenderit enim
+        provident tempora nulla? Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Unde a commodi amet nostrum error alias, repudiandae
+        vitae eveniet iure accusantium maxime explicabo hic expedita, quam
+        pariatur soluta delectus quae sapiente! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Similique molestiae dolor est debitis esse
+        omnis rem blanditiis, illum itaque facere sapiente quod quisquam iste,
+        numquam, reprehenderit enim provident tempora nulla? Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Unde a commodi amet nostrum
+        error alias, repudiandae vitae eveniet iure accusantium maxime explicabo
+        hic expedita, quam pariatur soluta delectus quae sapiente! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Similique molestiae dolor
+        est debitis esse omnis rem blanditiis, illum itaque facere sapiente quod
+        quisquam iste, numquam, reprehenderit enim provident tempora nulla?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde a commodi
+        amet nostrum error alias, repudiandae vitae eveniet iure accusantium
+        maxime explicabo hic expedita, quam pariatur soluta delectus quae
+        <br /><br />
+        sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Similique molestiae dolor est debitis esse omnis rem blanditiis, illum
+        itaque facere sapiente quod quisquam iste, numquam, reprehenderit enim
+        provident tempora nulla? Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Unde a commodi amet nostrum error alias, repudiandae
+        vitae eveniet iure accusantium maxime explicabo hic expedita, quam
+        pariatur soluta delectus quae sapiente! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Similique molestiae dolor est debitis esse
+        omnis rem blanditiis, illum itaque facere sapiente quod quisquam iste,
+        numquam, reprehenderit enim provident tempora nulla? Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Unde a commodi amet nostrum
+        error alias, repudiandae vitae eveniet iure accusantium maxime explicabo
+        hic expedita, quam pariatur soluta delectus quae sapiente!
+      </p>
+    </div>
+    
+    <div class="third">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, corrupti animi? Quas explicabo natus in deleniti facere autem et tempore aspernatur pariatur quasi vero cumque architecto, quis laboriosam, similique rerum. </br><br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse expedita accusantium ad! Dolorem nobis unde cum ut ea molestiae fugit ab enim fugiat, architecto commodi? Quas officiis nobis totam nisi.
+        </p>
+    </div>
+
+    <script>
+      let listjeBg = document.getElementById("list-bg");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let listFront = document.getElementById("list-front");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        listjeBg.style.top = value * 0.35 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 1 + "px";
+      });
+    </script>
+  </body>
+</html>
